@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
-    public GameObject bulletPrefab;
-    public Transform bullet;
-
+public class PlayerSpawner : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
 
