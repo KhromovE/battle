@@ -204,6 +204,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40cc0a2794b474632b16bc16b2d3d063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 4225884340976703686, guid: 947854ff395dd466fbeb7bf135ec4403,
+    type: 3}
+  bulletSpawn: {fileID: 0}
+  isLocalPlayer: 1
 --- !u!114 &9026462974803551736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,6 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43813839baede49ae9de6a689e3acea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnDeath: 0
+  currentHealth: 100
+  isEnemy: 1
+  healthBar: {fileID: 8007288374897877296}
 --- !u!1 &3270525172713788124
 GameObject:
   m_ObjectHideFlags: 0

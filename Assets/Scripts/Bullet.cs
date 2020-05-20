@@ -1,18 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Bullet : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class Bullet : MonoBehaviour {
+    [HideInInspector]
+    public GameObject playerFrom;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnCollisionEnter(Collision collision) {
+        var hit = collision.gameObject;
+        var health = hit.GetComponent<Health>();
+        if (health != null) {
+            health.TakeDamage(playerFrom, 10);
+        }
+
+        Destroy(gameObject);
     }
 }
